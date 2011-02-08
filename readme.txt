@@ -1,4 +1,4 @@
-﻿=== Theme File Maker ===
+=== Theme File Maker ===
 Contributors: adsbycb,bainternet 
 Tags: theme page, template file, theme generator,
 Requires at least: 2.9.2
@@ -43,7 +43,7 @@ Simple steps:
   
 2. Then activate the Plugin from Plugins page.  
   
-3. Go to Appearance option panel named \"new template \" under Appearance.  
+3. Go to Appearance option panel named "new template" under Appearance.  
   
 4. name you template file and select the options you want.  
   
