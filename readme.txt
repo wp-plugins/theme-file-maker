@@ -52,8 +52,8 @@ Simple steps:
 
 none yet.
 == Screenshots ==
-1. Theme page creation panel.
 
+1. Theme page creation panel.
 == Changelog ==
 0.2 quick bug fix.  
   
