@@ -11,10 +11,11 @@ This plugin Lets you to create your own template pages
 
 Lets you to create your own template pages (blank, or with custom loop) without leaving the WordPress Admin and no file uploading is needed.  
   
-Features:  
+Features:
+  
 * Create template files form your WordPress admin.  
-* Include \"get_header\".  
-* Include \"get_footer\".  
+* Include "get_header".  
+* Include "get_footer".  
 * Custom Query posts options :  
   -Post Type.  
   -Posts in Categories.  
