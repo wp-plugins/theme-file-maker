@@ -9,30 +9,31 @@ This plugin Lets you to create your own template pages
 
 == Description ==
 
-Lets you to create your own template pages (blank, or with custom loop) without leaving the WordPress Admin and no file uploading is needed.  
+Lets you to create your own template pages (blank, or with custom loop) without leaving the WordPress Admin and no file uploading is needed.
+
   
-Features:
+**Features:**
+
   
-* Create template files form your WordPress admin.  
-* Include "get_header".  
-* Include "get_footer".  
-* Custom Query posts options :  
-  -Post Type.  
-  -Posts in Categories.  
-  -More to come.  
-* Custom Loop options :  
-  -Display Post Title.  
-  -Display Post Date.  
-  -Display Post Author.  
-  -Display Post content or excerpt.  
-  -Display Post Thumbnail.  
-  -Display Post categories.  
-  -Display Post tags.  
-  -Display Post Comment meta.  
-  
+*    Create template files form your WordPress admin.  
+*    Include "get_header".  
+*    Include "get_footer".  
+*    Custom Query posts options :  
+         -Post Type.  
+         -Posts in Categories.  
+		 -More to come.  
+*    Custom Loop options :  
+		 -Display Post Title.  
+		 -Display Post Date.  
+		 -Display Post Author.  
+	     -Display Post content or excerpt.  
+		 -Display Post Thumbnail.  
+		 -Display Post categories.  
+		 -Display Post tags.  
+		-Display Post Comment meta.  
 and more.
 
-any Feedback is Welcome.
+any Feedback good or bad is Welcome.
 
 == Installation ==
 
