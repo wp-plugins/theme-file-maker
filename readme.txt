@@ -1,5 +1,6 @@
 === Theme File Maker ===
 Contributors: adsbycb,bainternet 
+Donate link: http://en.bainternet.info/donations
 Tags: theme page, template file, theme generator,
 Requires at least: 2.9.2
 Tested up to: 3.1
