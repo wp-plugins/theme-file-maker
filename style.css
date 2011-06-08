@@ -1,0 +1,62 @@
+
+#tabswrapper{
+width: 600px;
+margin: 0 auto;
+}
+#tabsleft{
+float: left;
+width: 250px;
+}
+#tabsright{
+float: right;
+width: 350px;
+}
+.tab h3{
+color: #333;
+padding: 3px;
+font-size: 12px;
+margin: 0 1px 1px 0;
+text-align: center;
+background: #6FB9E9;
+}
+.tab{
+color: #333;
+padding: 3px;
+margin: 0 1px 1px 0;
+text-align: center;
+background: #6FB9E9;
+}
+.stretcher{
+background: #6FB9E9;
+}
+.shown
+{
+    display : block ;
+	background: #6FB9E9;
+}
+.notshown
+{
+    display : none ;
+	background: #6FB9E9;
+}
+.active
+{
+    
+background: #b3b3b3;
+}
+.notactive
+{
+background: #6FB9E9;
+}
+.linksul li
+{
+    float : right;
+    list-style-type :none ;
+}
+#tabscontent h3{display:block;
+font-size:1.17em;
+font-weight:bold;
+margin:1px 0}
+#tabscontent p{
+margin-left:5px;
+}
