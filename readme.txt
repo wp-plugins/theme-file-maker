@@ -1,10 +1,10 @@
 === Theme File Maker ===
 Contributors: adsbycb,bainternet 
 Donate link: http://en.bainternet.info/donations
-Tags: theme page, template file, theme generator,
+Tags: theme page, template file, theme generator, template maker, theme maker
 Requires at least: 2.9.2
 Tested up to: 3.1
-Stable tag: 0.2.0
+Stable tag: 1.0.0
 
 This plugin Lets you to create your own template pages
 
@@ -34,7 +34,12 @@ Lets you to create your own template pages (blank, or with custom loop) without 
 		-Display Post Comment meta.  
 and more.
 
-any Feedback good or bad is Welcome.
+any Feedback is Welcome.
+
+check out our [other plugins][1]
+
+ [1]: http://en.bainternet.info/category/plugins
+
 
 == Installation ==
 
@@ -56,6 +61,8 @@ none yet.
 
 1. Theme page creation panel.
 == Changelog ==
+1.0.0 updated and replaced deprecated functions with new ones.
+
 0.2 quick bug fix.  
   
 0.1 inital release.

@@ -3,11 +3,11 @@
 Plugin Name: Theme File Maker
 Plugin URI: http://www.Bainternet.info/wordpress/plugins
 Description: Lets you to create your own template pages (blank, or with custom loop) without leaving the WordPress Admin and no file uploading is needed.
-Version: 0.2.0
-Author: Ohad raz, bainternet
+Version: 1.0.0
+Author: BaInternet ,Ohad raz
 Author URI: http://en.Bainternet.info/
 */
-/*  Copyright 2010 באינטרנט בניית אתרים  (email : admin@bainternet.info)
+/*  Copyright 2010 BaInternet  (email : admin@bainternet.info)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -35,14 +35,14 @@ function insert_attribute_to_tag($tag,$attribute){
 add_action('admin_menu', 'admin_menu1');
 function admin_menu1()
 	{
-	$plugin_page=add_submenu_page('themes.php', 'New Tamplate', 'New Tamplate', 10, __FILE__, 'trender');
+	$plugin_page=add_submenu_page('themes.php', 'New Tamplate', 'New Tamplate', 'edit_themes', __FILE__, 'trender');
 	add_action( 'admin_head-'. $plugin_page, 'myplugin_admin_header' );
 	}
 }	 
 	
 	
 function myplugin_admin_header(){
-	$plugindir = get_settings('home').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
+	$plugindir = get_option('home').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__));
 	echo "<link rel='stylesheet' href='$plugindir/style.css' type='text/css' />\n";
 
 }
@@ -55,9 +55,15 @@ function myplugin_admin_header(){
 	{
 		echo '<div class="wrap">';
 		echo '<h2>Create New Tamplate File</h2>';
+		echo '<ul style="list-style: square inside none; width: 300px; font-weight: bolder; padding: 20px; border: 2px solid; background-color: #FFFFE0; border-color: #E6DB55; position: fixed;  right: 120px; top: 150px;">
+					<li> Any feedback or suggestions are welcome</li>
+					<li> <a href="http://wordpress.org/tags/theme-file-maker?forum_id=10">Support forum</a> for help and bug submittion</li>
+					<li> Also check out <a href="http://en.bainternet.info/category/plugins">my other plugins</a></li>
+					<li> And if you like my work <a  style="color: #FC000D;" href="http://en.bainternet.info/donations">make a donation</a></li>
+				</ul>';
 		if(current_user_can('edit_plugins'))
 		{
-			global $display_name;
+			global $display_name,$user_url;
 			get_currentuserinfo();
 			$defaults = array(
 				'tamplate_name' => 'New Tamplate',
