@@ -35,7 +35,7 @@ function insert_attribute_to_tag($tag,$attribute){
 add_action('admin_menu', 'admin_menu1');
 function admin_menu1()
 	{
-	$plugin_page=add_submenu_page('themes.php', 'New Tamplate', 'New Tamplate', 'edit_themes', __FILE__, 'trender');
+	$plugin_page=add_submenu_page('themes.php', 'New Template File', 'New Template File', 'edit_themes', __FILE__, 'trender');
 	add_action( 'admin_head-'. $plugin_page, 'myplugin_admin_header' );
 	}
 }	 
@@ -54,7 +54,7 @@ function myplugin_admin_header(){
  function trender()
 	{
 		echo '<div class="wrap">';
-		echo '<h2>Create New Tamplate File</h2>';
+		echo '<h2>Create New Template File</h2>';
 		echo '<ul style="list-style: square inside none; width: 300px; font-weight: bolder; padding: 20px; border: 2px solid; background-color: #FFFFE0; border-color: #E6DB55; position: fixed;  right: 120px; top: 150px;">
 					<li> Any feedback or suggestions are welcome</li>
 					<li> <a href="http://wordpress.org/tags/theme-file-maker?forum_id=10">Support forum</a> for help and bug submittion</li>
@@ -66,26 +66,26 @@ function myplugin_admin_header(){
 			global $display_name,$user_url;
 			get_currentuserinfo();
 			$defaults = array(
-				'tamplate_name' => 'New Tamplate',
-				'Tamplate_uri' => get_bloginfo('url'),
-				'description' => 'A Brand New Tamplate File',
+				'template_name' => 'New Template',
+				'Template_uri' => get_bloginfo('url'),
+				'description' => 'A Brand New Template File',
 				'version' => '1.0',
 				'author' => '' != $display_name ? $display_name : get_bloginfo('name'),
 				'author_uri' => '' != $user_url ? $user_url : get_bloginfo('url'),
 				'' => '');
 			$r = wp_parse_args($_POST, $defaults);
-			$r['tamplate_name'] = strtolower( str_replace(' ', '-', $r['tamplate_name']) );
+			$r['template_name'] = strtolower( str_replace(' ', '-', $r['template_name']) );
 			
-			if(isset($_POST['tamplate_name']))
+			if(isset($_POST['template_name']))
 			{
 				if(!wp_verify_nonce($_POST['_wpnonce'], 't-maker'))
 					wp_die(__('Error'));
-				echo 'Creating tamplate';
+				echo 'Creating template';
 				
 				// create dir
 				extract($r, EXTR_SKIP);
 				
-				$file_name = TEMPLATEPATH . '/' . $tamplate_name . '.php';
+				$file_name = TEMPLATEPATH . '/' . $template_name . '.php';
 				
 				
 				if(file_exists( $file_name))
@@ -402,7 +402,7 @@ function myplugin_admin_header(){
 				$file_contents = <<<OUT
 <?php
 /*
-Template Name: $tamplate_name
+Template Name: $template_name
 */
 ?>
 
@@ -417,7 +417,7 @@ $prefile[3]
 OUT;
 				fwrite($handle, $file_contents);
 				fclose($handle);
-				echo '<p> tamplate page successfully created. Start editing the tamplate page at <a href="' . admin_url('theme-editor.php') .'">here</a>';
+				echo '<p> template page successfully created. Start editing the template page at <a href="' . admin_url('theme-editor.php') .'">here</a>';
 			}
 			else
 			{
@@ -457,8 +457,8 @@ OUT;
 				echo '<table class="form-table" dir="ltr">';
 
 				echo '<tr valign="top"><th scope="row">';
-				echo '<label for="tamplate_name">' . __('Tamplate Name') . '</label></th><td>';
-				echo '<input type="text"   id="tamplate_name" name="tamplate_name" value=""/>';
+				echo '<label for="template_name">' . __('Template Name') . '</label></th><td>';
+				echo '<input type="text"   id="template_name" name="template_name" value=""/>';
 				echo '</td></tr>';
 				
 				echo '<tr valign="top"><th scope="row">';
@@ -618,7 +618,4 @@ OUT;
 		echo '</div>';
 	}
 	
-	 
-
-
 ?>

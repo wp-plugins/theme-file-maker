@@ -4,7 +4,7 @@ Donate link: http://en.bainternet.info/donations
 Tags: theme page, template file, theme generator, template maker, theme maker
 Requires at least: 2.9.2
 Tested up to: 3.1
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 
 This plugin Lets you to create your own template pages
 
@@ -61,6 +61,8 @@ none yet.
 
 1. Theme page creation panel.
 == Changelog ==
+1.1.0 spelling fixes.
+
 1.0.0 updated and replaced deprecated functions with new ones.
 
 0.2 quick bug fix.  
