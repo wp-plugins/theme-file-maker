@@ -3,7 +3,7 @@ Contributors: adsbycb,bainternet
 Donate link: http://en.bainternet.info/donations
 Tags: theme page, template file, theme generator, template maker, theme maker
 Requires at least: 2.9.2
-Tested up to: 3.1
+Tested up to: 4.0.0
 Stable tag: 1.1.0
 
 This plugin Lets you to create your own template pages
